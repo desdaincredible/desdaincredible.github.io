@@ -1,0 +1,121 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .25em;
+    line-height: 2em;
+    color: white;
+    font-size: 26px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: url("/Users/moosesdeuces/sei-june-bug/4-1-tamagatchi/tamagatchi/tamagatchi/Images/background.jpg");
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "a a b b c c"
+    "a a b b c c"
+    "d d d d d d"
+    "e e e e e e";
+  }
+
+  .item1 {
+    grid-area: a;
+    padding: 30px 30px 0px 30px;
+  }
+
+  .item2 {
+    grid-area: b;
+    text-align: center;
+    padding: 30px 30px 0px 30px;
+    line-height: 1.35em;
+  }
+
+  .item3 {
+    grid-area: c;
+    padding: 30px 30px 0px 30px;
+    text-align: right;
+  }
+
+  .item4 {
+    grid-area: d;
+  }
+
+  .item5 {
+    grid-area: e;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .25em;
+    line-height: 2em;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    border-radius: .5em;
+    border: 1px solid #ffffff;
+    color: #7dd3c2;
+    height: 50px;;
+}
+
+input[type=text], select {
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: .5em;
+    font-size: 15px;
+    text-align: center;
+  }
+
+img {
+    position: relative;
+}
+
+#walking {
+    padding: 0 200px 0 130px;
+    animation-duration: 4s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: -webkit-sticky;
+}
+
+@keyframes moving {
+    from {
+        left: 5%;
+    }
+    to {
+        right: 5%;
+    }
+}
+
+#home {
+    padding: 15px 0 15px 0;
+}
+
+#morph {
+    padding: 0 540px 50px 540px;
+}
+
+#dead {
+    padding: 0 470px 50px 470px;
+}
+
+h1 {
+    line-height: 1em;
+}
+
+h3 {
+    text-align: left;
+}
+
+p {
+    line-height: 1.25em;
+    font-size: 16px;
+    text-align: left;
+}

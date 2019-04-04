@@ -9,7 +9,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background: url("/Users/moosesdeuces/sei-june-bug/4-1-tamagatchi/tamagatchi/tamagatchi/Images/background.jpg");
+    background: url("../Images/background.jpg");
     height: 100%;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
